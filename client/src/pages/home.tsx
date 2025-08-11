@@ -110,7 +110,7 @@ export default function Home() {
               Electronics
             </span>
             <br />
-            <span className="text-white font-black">
+            <span className="text-white font-black glow-text">
               VELECTRO
             </span>
           </h1>
