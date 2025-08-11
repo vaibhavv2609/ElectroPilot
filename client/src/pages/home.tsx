@@ -110,7 +110,7 @@ export default function Home() {
               Electronics
             </span>
             <br />
-            <span className="neon-velectro floating-animation font-black">
+            <span className="neon-velectro floating-animation text-[#360ca866] font-extrabold pl-[21px] pr-[21px] pt-[14px] pb-[14px] bg-[#ffffff00]">
               VELECTRO
             </span>
           </h1>
