@@ -112,7 +112,7 @@ export default function Home() {
               Electronics
             </span>
             <br />
-            <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent glow-text floating-animation font-black">
+            <span className="neon-velectro floating-animation font-black">
               VELECTRO
             </span>
           </h1>

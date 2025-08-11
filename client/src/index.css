@@ -154,6 +154,58 @@
     text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 40px currentColor;
   }
 
+  /* Neon VELECTRO Symbol Effect */
+  .neon-velectro {
+    position: relative;
+    font-family: 'Arial Black', sans-serif;
+    color: #ff0080;
+    text-shadow: 
+      0 0 5px #ff0080,
+      0 0 10px #ff0080,
+      0 0 15px #ff0080,
+      0 0 20px #ff0080,
+      0 0 30px #ff0080,
+      0 0 40px #ff0080,
+      0 0 55px #ff0080,
+      0 0 75px #ff0080;
+    animation: neon-flicker 3s infinite alternate;
+  }
+
+  .neon-velectro::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: radial-gradient(ellipse at center, 
+      rgba(255, 0, 128, 0.4) 0%,
+      rgba(168, 85, 247, 0.3) 25%,
+      rgba(0, 255, 255, 0.2) 50%,
+      transparent 70%);
+    filter: blur(25px);
+    z-index: -1;
+    animation: backlight-pulse 4s ease-in-out infinite;
+  }
+
+  .neon-velectro::after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
+    background: linear-gradient(45deg, 
+      rgba(255, 0, 128, 0.3),
+      rgba(168, 85, 247, 0.3),
+      rgba(0, 255, 255, 0.3),
+      rgba(255, 0, 128, 0.3));
+    filter: blur(35px);
+    z-index: -2;
+    border-radius: 30px;
+    animation: backlight-rotate 8s linear infinite;
+  }
+
   .cyber-grid {
     background-image: 
       linear-gradient(rgba(123, 97, 255, 0.03) 1px, transparent 1px),
@@ -201,6 +253,46 @@
 @keyframes glow {
   0%, 100% { box-shadow: 0 0 20px rgba(123, 97, 255, 0.3); }
   50% { box-shadow: 0 0 40px rgba(123, 97, 255, 0.8); }
+}
+
+@keyframes neon-flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 
+      0 0 5px #ff0080,
+      0 0 10px #ff0080,
+      0 0 15px #ff0080,
+      0 0 20px #ff0080,
+      0 0 30px #ff0080,
+      0 0 40px #ff0080,
+      0 0 55px #ff0080,
+      0 0 75px #ff0080;
+  }
+  
+  20%, 24%, 55% {
+    text-shadow: 
+      0 0 2px #ff0080,
+      0 0 5px #ff0080,
+      0 0 8px #ff0080,
+      0 0 12px #ff0080,
+      0 0 18px #ff0080,
+      0 0 25px #ff0080;
+  }
+}
+
+@keyframes backlight-pulse {
+  0%, 100% { 
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% { 
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes backlight-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .animate-glow {
