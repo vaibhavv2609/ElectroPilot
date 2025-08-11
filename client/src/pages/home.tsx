@@ -104,7 +104,7 @@ export default function Home() {
           </div>
           
           <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black mb-8 leading-tight">
-            <span className="bg-gradient-to-r from-white via-primary to-accent bg-clip-text glow-text text-[#fffafabf] text-[58px] font-extrabold pl-[2px] pr-[2px]">Future of Shopping</span>
+            <span className="bg-gradient-to-r from-white via-primary to-accent bg-clip-text glow-text text-[58px] font-extrabold pl-[2px] pr-[2px] text-[#6cebdcb5]">Future of Shopping</span>
             <br />
             <span className="bg-gradient-to-r from-accent via-primary to-white bg-clip-text text-transparent glow-text">
               Electronics
