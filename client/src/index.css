@@ -179,8 +179,8 @@
     right: -20px;
     bottom: -20px;
     background: radial-gradient(ellipse at center, 
-      rgba(255, 0, 128, 0.4) 0%,
-      rgba(168, 85, 247, 0.3) 25%,
+      rgba(0, 255, 255, 0.6) 0%,
+      rgba(0, 255, 255, 0.4) 25%,
       rgba(0, 255, 255, 0.2) 50%,
       transparent 70%);
     filter: blur(25px);
@@ -196,10 +196,10 @@
     right: -15px;
     bottom: -15px;
     background: linear-gradient(45deg, 
-      rgba(255, 0, 128, 0.3),
-      rgba(168, 85, 247, 0.3),
-      rgba(0, 255, 255, 0.3),
-      rgba(255, 0, 128, 0.3));
+      rgba(0, 255, 255, 0.4),
+      rgba(0, 200, 255, 0.4),
+      rgba(0, 255, 255, 0.4),
+      rgba(0, 150, 255, 0.4));
     filter: blur(35px);
     z-index: -2;
     border-radius: 30px;
